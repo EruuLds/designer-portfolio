@@ -6,7 +6,7 @@ import { faLinkedin, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 export default function ContactMe() {
     return (
-        <div className="h-[40dvh] flex flex-col justify-center">
+        <div className="h-[40vh] flex flex-col justify-center">
             <SubsectionTitle text={'Gracias por llegar hasta aquí :)'} />
             <div className="panel-a m-auto max-w-full w-fit flex flex-col gap-2 text-center">
                 <p className="my-4 mx-3 text-pretty text-lg">
