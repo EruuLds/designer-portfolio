@@ -1,0 +1,83 @@
+{
+    "illustrator": {
+        "icon": "/icons/illustrator-icon.svg",
+        "label": "Illustrator"
+    },
+    "affinity": {
+        "icon": "/icons/affinity-icon.svg",
+        "label": "Affinity"
+    },
+    "indesign": {
+        "icon": "/icons/indesign-icon.svg",
+        "label": "InDesign"
+    },
+    
+    "photoshop": {
+        "icon": "/icons/photoshop-icon.svg",
+        "label": "Photoshop"
+    },
+    "lightroom": {
+        "icon": "/icons/lightroom-icon.svg",
+        "label": "Lightroom"
+    },
+
+    "premiere": {
+        "icon": "/icons/premiere-icon.svg",
+        "label": "Premiere"
+    },
+    "aftereffects": {
+        "icon": "/icons/aftereffects-icon.svg",
+        "label": "After Effects"
+    },
+    "maya": {
+        "icon": "/icons/maya-icon.svg",
+        "label": "Maya"
+    },
+    "davinci": {
+        "icon": "/icons/davinci-icon.svg",
+        "label": "DaVinci"
+    },
+    
+    "logic": {
+        "icon": "/icons/logic-icon.webp",
+        "label": "Logic Pro"
+    },
+    "ableton": {
+        "icon": "/icons/ableton-icon.png",
+        "label": "Ableton"
+    },
+    "audition": {
+        "icon": "/icons/audition-icon.svg",
+        "label": "Audition"
+    },
+    
+
+    "html": {
+        "icon": "/icons/html-icon.svg",
+        "label": "HTML5"
+    },
+    "css": {
+        "icon": "/icons/css-icon.svg",
+        "label": "CSS3"
+    },
+    "js": {
+        "icon": "/icons/js-icon.svg",
+        "label": "JavaScript"
+    },
+    "react": {
+        "icon": "/icons/react-icon.svg",
+        "label": "React"
+    },
+    "tailwind": {
+        "icon": "/icons/tailwind-icon.svg",
+        "label": "Tailwind"
+    },
+    "firebase": {
+        "icon": "/icons/firebase-icon.svg",
+        "label": "Firebase"
+    },
+    "figma": {
+        "icon": "/icons/figma-icon.svg",
+        "label": "Figma"
+    }
+}

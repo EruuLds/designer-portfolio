@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "staatliches";
+  src: url("/fonts/Staatliches-Regular.ttf");
+}
+
+@font-face {
+  font-family: "gabarito";
+  src: url("/fonts/Gabarito-VariableFont_wght.ttf");
+}
+
+@theme {
+  --font-heading: 'staatliches', Impact, 'Arial Narrow Bold', sans-serif;
+  --font-body: 'gabarito', Arial, Helvetica, sans-serif;
+  --color-primary: #ffc933;
+  --color-secondary: #3f3f3f;
+  --subtle-border: @apply border-zinc-700/50;
+}
+
+@layer base {
+  :root {
+    font-family: var(--font-body);
+    scroll-behavior: smooth;
+    @apply bg-zinc-950 text-zinc-200;
+  }
+
+  body {
+    @apply 
+    bg-gradient-to-b 
+    from-zinc-950 
+    to-zinc-800 bg-fixed;
+  }
+
+  nav {
+    @apply 
+    sticky
+    top-0 
+    w-full 
+    py-4 
+    mb-16
+    bg-zinc-700/20
+    backdrop-blur-md 
+    border-b border-zinc-500/25
+    z-[100];
+  }
+  
+  footer {
+    @apply 
+    w-full
+    py-4
+    bg-zinc-700/20
+    backdrop-blur-md 
+    border-b border-zinc-500/25
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    line-height: 0.8em;
+  }
+
+  h1 { font-size: 5rem; }
+  h2 { font-size: 3rem; }
+  h3 { font-size: 2.25rem; }
+  h4 { font-size: 1.5rem; }
+  h5 { font-size: 1rem; }
+  h6 { font-size: 0.75rem; }
+
+  a {
+    @apply text-nowrap;
+  }
+
+  p { line-height: 1.25em; }
+}
+
+.responsive-container {
+  @apply 
+  px-[1rem] 
+  sm:px-[1.5rem] 
+  md:px-[1.5rem] 
+  lg:px-[3rem] 
+  max-w-[1024px] 
+  w-full 
+  mx-auto;
+}
+
+.panel-a {
+  @apply 
+  bg-zinc-700/20
+  border
+  border-zinc-500/25
+  rounded-[1.75rem]
+  backdrop-blur-md
+  p-[0.5rem];
+}
+
+.panel-b {
+  @apply 
+  bg-zinc-600/20
+  border
+  border-zinc-500/25
+  rounded-[1.25rem]
+  backdrop-blur-md
+  p-[0.75rem];
+}
+
+.badge {
+  @apply flex items-center text-sm w-fit rounded-[1rem] py-1 px-2 border border-zinc-500/25 bg-zinc-700/20;
+}
+
+.button-primary {
+  @apply font-medium border border-zinc-500/25 bg-(--color-primary) text-(--color-secondary)
+}
+.button-secondary {
+  /*background-color: var(--color-secondary);*/
+  @apply font-medium border border-zinc-500/25 bg-zinc-800/20 backdrop-blur-md text-white;
+}
+
+.mark-magenta {
+  background-color: #ff265e;
+  @apply basis-7
+}
+.mark-yellow {
+  background-color: var(--color-primary);
+  @apply basis-2
+}
+
+
