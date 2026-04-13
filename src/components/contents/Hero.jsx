@@ -15,7 +15,7 @@ export default function Hero() {
                 <h1 className="text-6xl">Erhubey Ledesma</h1>
                 <GradientText
                     colors={["#FFC933", "#FFEA73", "#FFC933"]}
-                    animationSpeed={0}
+                    
                     className="mb-8"
                 >
                     <p className="text-4xl font-semibold text-balance">

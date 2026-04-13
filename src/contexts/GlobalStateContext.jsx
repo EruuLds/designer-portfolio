@@ -14,5 +14,5 @@ export function GlobalStateContextProvider({ children }) {
         >
             {children}
         </GlobalStateContext.Provider>
-  )
+    )
 }

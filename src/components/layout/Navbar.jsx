@@ -1,13 +1,21 @@
 import Dropdown from '../ui/Dropdown'
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareEnvelope, faBars, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { faSquareLinkedin, faSquareWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { useGlobalStateContext } from '../../hooks/useGlobalStateContext';
+import { useClickOutside } from '../../hooks/useClickOutside';
 
 export default function Navbar() {
     const { isMobile } = useGlobalStateContext();
     const [showMenu, setShowMenu ] = useState(true);
+
+    const navRef = useRef(null);
+    useClickOutside(navRef, () => {
+        if(isMobile) {
+            setShowMenu(false)
+        }
+    });
 
     const handleCloseMenu = () => {
         if(isMobile)
@@ -23,15 +31,14 @@ export default function Navbar() {
     }, [isMobile])
 
     return (
-        <nav>
+        <nav ref={navRef}>
             <div className="responsive-container grid grid-cols-[1fr_auto] sm:grid-cols-[auto_1fr] items-center gap-x-10">
-                <a href="#">
-                    <img
-                        className="h-[2rem]"
-                        src="/img/logo-reduced-colors.svg"
-                        alt="Erhubey Ledesma - Logo"
-                    />
-                </a>
+                
+                <img
+                    className="h-[2rem]"
+                    src="/img/logo-reduced-colors.svg"
+                    alt="Erhubey Ledesma - Logo"
+                />
 
                 {isMobile &&
                     <button className='cursor-pointer p-1 aspect-square button-secondary subtle-border rounded-[0.5rem]' onClick={() => setShowMenu(!showMenu)}>
